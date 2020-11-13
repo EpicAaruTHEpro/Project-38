@@ -167,6 +167,11 @@ function draw() {
   
   
   drawSprites();
+
+  if (score >= 100) {
+    text("You Won!", camera.position.x, 20);
+    gameState = END;
+  }
   text("Banana Score: "+ score, camera.position.x+150, 50);
 }
 
